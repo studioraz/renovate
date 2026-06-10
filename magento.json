@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "github>studioraz/renovate:magento-default",
+    "github>studioraz/renovate:magento-groupings",
+    "github>studioraz/renovate:magento-safeguards",
+    "github>studioraz/renovate:magento-safe-composer-updates"
+  ]
+}
