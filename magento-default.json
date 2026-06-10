@@ -5,6 +5,9 @@
     ":prHourlyLimitNone",
     ":prConcurrentLimitNone"
   ],
+  "addLabels": [
+    "renovate"
+  ],
   "dependencyDashboard": true,
   "schedule": [
     "before 3am"
