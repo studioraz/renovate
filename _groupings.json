@@ -16,10 +16,51 @@
       "enabled": true
     },
     {
+      "description": "Group Amasty Free Bar Promo base and Hyvä compat modules",
+      "matchPackageNames": [
+        "amasty/module-free-bar-promo",
+        "amasty/module-free-bar-promo-hyva"
+      ],
+      "groupName": "Amasty Free Bar Promo Modules"
+    },
+    {
+      "description": "Group Amasty Free Gift Extended View base and Hyvä compat modules",
+      "matchPackageNames": [
+        "amasty/module-free-gift-extended-view",
+        "amasty/module-free-gift-extended-view-hyva"
+      ],
+      "groupName": "Amasty Free Gift Extended View Modules"
+    },
+    {
+      "description": "Group Amasty Free Gift Timer base and Hyvä compat modules",
+      "matchPackageNames": [
+        "amasty/module-free-gift-timer",
+        "amasty/module-free-gift-timer-hyva"
+      ],
+      "groupName": "Amasty Free Gift Timer Modules"
+    },
+    {
+      "description": "Group Amasty Promo Banners base and Hyvä compat modules",
+      "matchPackageNames": [
+        "amasty/module-promo-banners",
+        "amasty/module-promo-banners-hyva-compatibility",
+        "hyva-themes/magento2-amasty-promo-banners"
+      ],
+      "groupName": "Amasty Promo Banners Modules"
+    },
+    {
       "description": "Group Mirasvit SEO and its Hyva compat module",
       "matchPackageNames": [
         "mirasvit/module-seo",
         "mirasvit/module-seo-hyva"
+      ],
+      "groupName": "Mirasvit SEO Modules"
+    },
+    {
+      "description": "Group Mirasvit SEO base and Hyvä compat modules",
+      "matchPackageNames": [
+        "mirasvit/module-seo",
+        "hyva-themes/magento2-mirasvit-seo"
       ],
       "groupName": "Mirasvit SEO Modules"
     },
@@ -32,10 +73,26 @@
       "groupName": "Mirasvit Blog MX Modules"
     },
     {
+      "description": "Group Mirasvit Cache Warmer base and Hyvä compat modules",
+      "matchPackageNames": [
+        "mirasvit/module-cache-warmer",
+        "mirasvit/module-cache-warmer-hyva"
+      ],
+      "groupName": "Mirasvit Cache Warmer Modules"
+    },
+    {
       "description": "Group Mirasvit Catalog Label and its Hyva compat module",
       "matchPackageNames": [
         "mirasvit/module-cataloglabel",
         "mirasvit/module-cataloglabel-hyva"
+      ],
+      "groupName": "Mirasvit Catalog Label Modules"
+    },
+    {
+      "description": "Group Mirasvit Catalog Label base and Hyvä compat modules",
+      "matchPackageNames": [
+        "mirasvit/module-cataloglabel",
+        "hyva-themes/magento2-mirasvit-catalog-label"
       ],
       "groupName": "Mirasvit Catalog Label Modules"
     },
@@ -56,6 +113,14 @@
       "groupName": "Mirasvit Form Builder Modules"
     },
     {
+      "description": "Group Mirasvit GDPR base and Hyvä compat modules",
+      "matchPackageNames": [
+        "mirasvit/module-gdpr",
+        "mirasvit/module-gdpr-hyva"
+      ],
+      "groupName": "Mirasvit GDPR Modules"
+    },
+    {
       "description": "Group Mirasvit GTM and its Hyva compat module",
       "matchPackageNames": [
         "mirasvit/module-gtm",
@@ -72,12 +137,28 @@
       "groupName": "Mirasvit Navigation Modules"
     },
     {
+      "description": "Group Mirasvit Product Kit base and Hyvä compat modules",
+      "matchPackageNames": [
+        "mirasvit/module-product-kit",
+        "mirasvit/module-product-kit-hyva"
+      ],
+      "groupName": "Mirasvit Product Kit Modules"
+    },
+    {
       "description": "Group Mirasvit Search Ultimate and its Hyva compat module",
       "matchPackageNames": [
         "mirasvit/module-search-ultimate",
         "mirasvit/module-search-ultimate-hyva"
       ],
       "groupName": "Mirasvit Search Ultimate Modules"
+    },
+    {
+      "description": "Group Mirasvit Affiliate base and Hyvä compat modules",
+      "matchPackageNames": [
+        "mirasvit/module-affiliate",
+        "hyva-themes/magento2-mirasvit-affiliate"
+      ],
+      "groupName": "Mirasvit Affiliate Modules"
     },
     {
       "description": "Group Mirasvit Related and its Hyva compat module",
@@ -88,12 +169,28 @@
       "groupName": "Mirasvit Related Modules"
     },
     {
+      "description": "Group Mirasvit Related base and Hyvä compat modules",
+      "matchPackageNames": [
+        "mirasvit/module-related",
+        "hyva-themes/magento2-mirasvit-related"
+      ],
+      "groupName": "Mirasvit Related Modules"
+    },
+    {
       "description": "Group MageWorx Gift Card base and Hyvä compat modules together",
       "matchPackageNames": [
         "mageworx/module-giftcards",
         "hyva-themes/magento2-mageworx-giftcards"
       ],
       "groupName": "MageWorx Gift Card Modules"
+    },
+    {
+      "description": "Group MageWorx Advanced Product Options base and Hyvä compat modules",
+      "matchPackageNames": [
+        "mageworx/module-advancedproductoptions",
+        "hyva-themes/magento2-mageworx-advanced-product-options"
+      ],
+      "groupName": "MageWorx Advanced Product Options Modules"
     }
   ]
 }
