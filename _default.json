@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "config:base",
+    ":timezone(Asia/Jerusalem)",
+    ":prHourlyLimitNone",
+    ":prConcurrentLimitNone"
+  ],
+  "addLabels": [
+    "renovate"
+  ],
+  "dependencyDashboard": true,
+  "schedule": [
+    "before 3am"
+  ],
+  "includePaths": [
+    "composer.json"
+  ],
+  "composer": {
+    "enabled": true
+  }
+}

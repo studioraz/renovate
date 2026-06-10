@@ -1,0 +1,28 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Strictly ignore MageOS/Magento core packages to prevent platform upgrade PRs.",
+      "matchPackageNames": [
+        "magento/product-community-edition",
+        "magento/magento2-base",
+        "magento/framework"
+      ],
+      "enabled": false
+    },
+    {
+      "description": "Ignore all require-dev dependencies.",
+      "matchDepTypes": [
+        "require-dev"
+      ],
+      "enabled": false
+    },
+    {
+      "description": "Ignore Amasty packages to bypass 401 Unauthorized errors.",
+      "matchPackagePatterns": [
+        "^amasty/"
+      ],
+      "enabled": false
+    }
+  ]
+}
