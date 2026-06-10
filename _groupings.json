@@ -86,6 +86,14 @@
         "mirasvit/module-related-hyva"
       ],
       "groupName": "Mirasvit Related Modules"
+    },
+    {
+      "description": "Group MageWorx Gift Card base and Hyvä compat modules together",
+      "matchPackageNames": [
+        "mageworx/module-giftcards",
+        "hyva-themes/magento2-mageworx-giftcards"
+      ],
+      "groupName": "MageWorx Gift Card Modules"
     }
   ]
 }
