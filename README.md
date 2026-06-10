@@ -1,6 +1,6 @@
 # renovate
 
-Shared Renovate presets for StudioRaz repositories.
+Shared Renovate presets for Magento-based repositories.
 
 ## How to use
 
