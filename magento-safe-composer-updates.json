@@ -21,7 +21,8 @@
         "integer-net/magento2-sansec-watch",
         "studioraz/magento2-rtl-css",
         "studioraz/magento2-userway-accessibility",
-        "studioraz/magento2-whatsapp-widget"
+        "studioraz/magento2-whatsapp-widget",
+        "studioraz/magento2-language-pack-he-il"
       ],
       "addLabels": [
         "safe-to-merge-without-testing"
