@@ -1,4 +1,4 @@
-# renovate presets for Magento/MageOS
+# Renovate presets for Magento/MageOS
 
 Shared Renovate presets for Magento-based repositories.
 
