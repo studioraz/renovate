@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Force Conventional Commits for Renovate commit messages and PR titles.",
+  "extends": [
+    ":semanticCommits",
+    ":semanticCommitTypeAll(chore)",
+    ":semanticCommitScope(deps)"
+  ],
+  "lockFileMaintenance": {
+    "commitMessageAction": "update",
+    "commitMessageTopic": "composer.lock"
+  }
+}
