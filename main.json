@@ -3,6 +3,7 @@
     "github>studioraz/renovate:_default",
     "github>studioraz/renovate:_groupings",
     "github>studioraz/renovate:_safeguards",
-    "github>studioraz/renovate:_safe-composer-updates"
+    "github>studioraz/renovate:_safe-composer-updates",
+    "github>studioraz/renovate:_conventional-commits"
   ]
 }
