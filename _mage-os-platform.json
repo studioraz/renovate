@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Upgrade all Mage-OS packages (including require-dev pins) together in one PR, letting Composer update root requirements with --with-all-dependencies.",
+      "matchManagers": [
+        "composer"
+      ],
+      "matchPackageNames": [
+        "/^mage-os\\//"
+      ],
+      "groupName": "Mage-OS platform",
+      "postUpdateOptions": [
+        "composerWithAll"
+      ],
+      "enabled": true
+    }
+  ]
+}

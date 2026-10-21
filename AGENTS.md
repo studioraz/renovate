@@ -38,6 +38,7 @@ main.json                    -> Public entrypoint preset (github>studioraz/renov
 _default.json                -> Base Renovate config (timezone, schedule, limits, labels, composer manager)
 _groupings.json              -> Package grouping rules for vendor modules (Amasty, Mirasvit, MageWorx)
 _safeguards.json             -> Safety rules (disable core Magento/Mage-OS upgrades, dev deps, auth-restricted packages)
+_mage-os-platform.json       -> Single grouped Mage-OS platform PR (all mage-os/* incl. require-dev, composer -W); extend after _safeguards
 _safe-composer-updates.json  -> Whitelist of low-risk Composer packages tagged with 'safe-to-merge-without-testing'
 _conventional-commits.json   -> Conventional Commits format for Renovate commit messages and PR titles (chore(deps): ...)
 ```
@@ -62,6 +63,7 @@ _conventional-commits.json   -> Conventional Commits format for Renovate commit 
 | Adding related module packages | Group them under a unified `groupName` in `_groupings.json` |
 | Adding low-risk utility modules | Append package name to `_safe-composer-updates.json` |
 | Blocking unsafe/breaking packages | Add to `_safeguards.json` with `"enabled": false` |
+| Mage-OS upgrade PR fails composer.lock artifact update | Fix in `_mage-os-platform.json` (grouping / `postUpdateOptions`), keep it after `_safeguards` in `main.json` |
 | Changing Renovate commit message / PR title format | Edit `_conventional-commits.json` |
 <!-- AGENTS-GENERATED:END heuristics -->
 
