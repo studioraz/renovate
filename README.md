@@ -25,6 +25,7 @@ studioraz/renovate
 ├── _default.json
 ├── _groupings.json
 ├── _safeguards.json
+├── _mage-os-platform.json
 ├── _safe-composer-updates.json
 └── _conventional-commits.json
 ```
@@ -49,6 +50,7 @@ This is the preset that project repositories should use. It extends all internal
     "github>studioraz/renovate:_default",
     "github>studioraz/renovate:_groupings",
     "github>studioraz/renovate:_safeguards",
+    "github>studioraz/renovate:_mage-os-platform",
     "github>studioraz/renovate:_safe-composer-updates",
     "github>studioraz/renovate:_conventional-commits"
   ]
@@ -111,6 +113,23 @@ Purpose:
 - Disables updates for Magento core/platform packages.
 - Disables updates for `require-dev` dependencies.
 - Disables Amasty package updates to avoid known private repository authorization issues.
+
+### `_mage-os-platform.json`
+
+Reference:
+
+```text
+github>studioraz/renovate:_mage-os-platform
+```
+
+Upgrades the Mage-OS platform as a single PR.
+
+Purpose:
+
+- Groups every `mage-os/*` Composer package (for example `product-community-edition`, `magento2-base`, `composer-root-update-plugin`, `composer-dependency-version-audit-plugin`) into one `Mage-OS platform` PR.
+- Re-enables `mage-os/*` `require-dev` pins (for example `magento-coding-standard`), which `_safeguards.json` otherwise disables, so they move in lockstep with the platform version.
+- Runs `composer update` with `--with-all-dependencies` (`composerWithAll`), so root requirements such as `symfony/finder` can move when the new platform version requires it.
+- Must be extended after `_safeguards.json` so it overrides the `require-dev` rule.
 
 ### `_safe-composer-updates.json`
 
