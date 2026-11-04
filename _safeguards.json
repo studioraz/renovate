@@ -19,8 +19,8 @@
     },
     {
       "description": "Ignore Amasty packages to bypass 401 Unauthorized errors.",
-      "matchPackagePatterns": [
-        "^amasty/"
+      "matchPackageNames": [
+        "/^amasty\\//"
       ],
       "enabled": false
     }
