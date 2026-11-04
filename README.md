@@ -25,7 +25,8 @@ studioraz/renovate
 ├── _default.json
 ├── _groupings.json
 ├── _safeguards.json
-└── _safe-composer-updates.json
+├── _safe-composer-updates.json
+└── _mirasvit-changelogs.json
 ```
 
 ## Public presets
@@ -48,7 +49,8 @@ This is the preset that project repositories should use. It extends all internal
     "github>studioraz/renovate:_default",
     "github>studioraz/renovate:_groupings",
     "github>studioraz/renovate:_safeguards",
-    "github>studioraz/renovate:_safe-composer-updates"
+    "github>studioraz/renovate:_safe-composer-updates",
+    "github>studioraz/renovate:_mirasvit-changelogs"
   ]
 }
 ```
@@ -125,6 +127,25 @@ Purpose:
 - Matches selected Composer packages that are considered low risk.
 - Adds the `safe-to-merge-without-testing` label to matching Renovate PRs.
 - Applies only to Composer-managed dependencies.
+
+### `_mirasvit-changelogs.json`
+
+Reference:
+
+```text
+github>studioraz/renovate:_mirasvit-changelogs
+```
+
+Adds vendor changelog links to Renovate PRs for Mirasvit Composer packages.
+
+Purpose:
+
+- Matches the 61 packages with a non-empty `changelog_url` in the [Mirasvit package feed](https://files.mirasvit.com/feed/package-list.json).
+- Builds each package's changelog URL using its URL-encoded Composer package name, without feed tracking parameters.
+- Leaves packages without a published changelog URL and unlisted compatibility packages unchanged.
+- Adds links only; Renovate does not embed or filter the vendor's release notes by version.
+
+The package list is a static snapshot, not fetched by Renovate. Refresh it from the feed when Mirasvit publishes changelog URLs for additional packages.
 
 ## Preset naming convention
 
