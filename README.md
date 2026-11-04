@@ -27,7 +27,8 @@ studioraz/renovate
 ├── _safeguards.json
 ├── _mage-os-platform.json
 ├── _safe-composer-updates.json
-└── _conventional-commits.json
+├── _conventional-commits.json
+└── _mirasvit-changelogs.json
 ```
 
 ## Public presets
@@ -52,7 +53,8 @@ This is the preset that project repositories should use. It extends all internal
     "github>studioraz/renovate:_safeguards",
     "github>studioraz/renovate:_mage-os-platform",
     "github>studioraz/renovate:_safe-composer-updates",
-    "github>studioraz/renovate:_conventional-commits"
+    "github>studioraz/renovate:_conventional-commits",
+    "github>studioraz/renovate:_mirasvit-changelogs"
   ]
 }
 ```
@@ -170,6 +172,25 @@ chore(deps): update dependency mirasvit/module-seo to v2.3.1
 chore(deps): update amasty free gift pro modules
 chore(deps): update composer.lock
 ```
+
+### `_mirasvit-changelogs.json`
+
+Reference:
+
+```text
+github>studioraz/renovate:_mirasvit-changelogs
+```
+
+Adds vendor changelog links to Renovate PRs for Mirasvit Composer packages.
+
+Purpose:
+
+- Matches the 61 packages with a non-empty `changelog_url` in the [Mirasvit package feed](https://files.mirasvit.com/feed/package-list.json).
+- Builds each package's changelog URL using its URL-encoded Composer package name, without feed tracking parameters.
+- Leaves packages without a published changelog URL and unlisted compatibility packages unchanged.
+- Adds links only; Renovate does not embed or filter the vendor's release notes by version.
+
+The package list is a static snapshot, not fetched by Renovate. Refresh it from the feed when Mirasvit publishes changelog URLs for additional packages.
 
 ## Preset naming convention
 
